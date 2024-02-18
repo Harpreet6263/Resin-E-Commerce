@@ -40,7 +40,7 @@ export default function SignIn() {
       </div>
       <button onClick={handleSignin}>Sign In</button>
       {error && <p style={{ color: 'red' }}>{error}</p>}
-      <p  id='member'>New to Resin Room? <Link to="/signup">Sign Up</Link> </p>
+      <p  id='member'>New to Resin Room? <Link style={{ color: 'red' }} to="/signup">Sign Up</Link> </p>
       </div>
   
     </div>

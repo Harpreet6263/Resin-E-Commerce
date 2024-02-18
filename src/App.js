@@ -21,6 +21,7 @@ import Cart from './component/Cart';
 import Orders from './component/Orders';
 import Confirmedorder from './component/Confirmedorder';
 import Diwali from './component/Diwali';
+import Contact from './component/Contact';
 
 
 
@@ -78,6 +79,10 @@ function App() {
           <Route path="/confirmedorder">
           <Navbar/>
            <Confirmedorder/>
+          </Route>
+          <Route path="/contact">
+          <Navbar/>
+           <Contact/>
           </Route>
           {/* <Route path="/users">
             <Users />

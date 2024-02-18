@@ -35,6 +35,35 @@ import t4 from './gallery/table/t4.jpg';
 import t5 from './gallery/table/t5.jpg';
 import t6 from './gallery/table/t6.jpg';
 import cs1 from './gallery/cake stand/cs1.jpg';
+import diya1 from './gallery/diwali/diwa/diwa1.jpg';
+import diya2 from './gallery/diwali/diwa/diwa2.jpg';
+import diya3 from './gallery/diwali/diwa/diwa3.jpg';
+import diya4 from './gallery/diwali/diwa/diwa4.jpg';
+import diya5 from './gallery/diwali/diwa/diwa5.jpg';
+import diya6 from './gallery/diwali/diwa/diwa6.jpg';
+import diya7 from './gallery/diwali/diwa/diwa7.jpg';
+import diya8 from './gallery/diwali/diwa/diwa8.jpg';
+import diya9 from './gallery/diwali/diwa/diwa9.jpg';
+import diya10 from './gallery/diwali/diwa/diwa10.jpg';
+import diya11 from './gallery/diwali/diwa/diwa11.jpg';
+import diya12 from './gallery/diwali/diwa/diwa12.jpg';
+import thali1 from './gallery/diwali/thali/thali1.jpg';
+import thali2 from './gallery/diwali/thali/thali2.jpg';
+import thali3 from './gallery/diwali/thali/thali3.jpg';
+import thali4 from './gallery/diwali/thali/thali4.jpg';
+import thali5 from './gallery/diwali/thali/thali5.jpg';
+import thali6 from './gallery/diwali/thali/thali6.jpg';
+import flowerhanging from './gallery/diwali/hanging/hanging1.jpg';
+import toran1 from './gallery/diwali/toran/toran1.jpg';
+import toran2 from './gallery/diwali/toran/toran2.jpg';
+import toran3 from './gallery/diwali/toran/toran3.jpg';
+import toran4 from './gallery/diwali/toran/toran4.jpg';
+import rangoli1 from './gallery/diwali/rangoli/rangoli1.jpg';
+import rangoli2 from './gallery/diwali/rangoli/rangoli2.jpg';
+import shub1 from './gallery/diwali/subh/shub1.jpg';
+import shub2 from './gallery/diwali/subh/shub2.jpg';
+import shub3 from './gallery/diwali/subh/shub3.jpg';
+
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 function Productkeyring(props) {
@@ -303,6 +332,230 @@ function Productkeyring(props) {
                 price = '1999';
                 deletePrice = '2499';
                 discount = '20%';
+                break;
+                case '32':
+                mainImage = diya1;
+                heading = 'Leaf T Light';
+                caption = 'Illuminate Your Space: Leaf T Light Resin - Nature-inspired Decor for Ambient Lighting [Size - 4 inch]';
+                price = '69';
+                deletePrice = '99';
+                discount = '30%';
+                break;
+                case '33':
+                mainImage = diya2;
+                heading = 'Cake Stand';
+                caption = 'Mystical Mandalas: Discover the Harmony Within. Embrace the Spiritual Essence of Sacred Geometry. [Size - 4 inch] [1 Piece]';
+                price = '79';
+                deletePrice = '119';
+                discount = '34%';
+                break;
+                case '34':
+                mainImage = diya3;
+                heading = 'Wooden Lotus T Light';
+                caption = 'Wooden Lotus T-Light Holders: Adding natural warmth and serenity to any space, these beautifully crafted accents illuminate with timeless charm. [Combo of 2]';
+                price = '49';
+                deletePrice = '99';
+                discount = '50%';
+                break;
+                case '35':
+                mainImage = diya4;
+                heading = 'Lotus T Light';
+                caption = 'Resin Lotus T-Light Holders: Adding natural warmth and serenity to any space, these beautifully crafted accents illuminate with timeless charm. [1 Piece]';
+                price = '199';
+                deletePrice = '249';
+                discount = '20%';
+                break;
+                case '36':
+                mainImage = diya5;
+                heading = 'Butterfly T Light';
+                caption = 'Butterfly T-Light Resin: Delicately crafted, these luminous accents flutter with grace, infusing your surroundings with enchanting beauty.';
+                price = '79';
+                deletePrice = '99';
+                discount = '20%';
+                break;
+                case '37':
+                mainImage = diya6;
+                heading = 'Flower T Light';
+                caption = 'Transform your ambiance with Flower T-Light Holders - Nature-inspired elegance to brighten any occasion, bringing a touch of floral charm. [Quantity - 1]';
+                price = '59';
+                deletePrice = '99';
+                discount = '40%';
+                break;
+                case '38':
+                mainImage = diya7;
+                heading = 'Square T Light';
+                caption = 'Resin Square T-Light Holders: Sleek and stylish, these geometric accents infuse your space with modern flair, casting a warm glow to elevate any setting.';
+                price = '79';
+                deletePrice = '99';
+                discount = '20%';
+                break;
+                case '39':
+                mainImage = diya8;
+                heading = 'Star T Light';
+                caption = 'Resin Star T-Lights: Adding celestial charm, these luminous stars evoke a sense of wonder, casting a radiant glow to enchant any room.';
+                price = '89';
+                deletePrice = '119';
+                discount = '25%';
+                break;
+                case '40':
+                mainImage = diya9;
+                heading = 'Red Crystal T Light';
+                caption = 'Red Crystal T-Lights: Infuse your space with a warm, inviting glow, adding a touch of sophistication and charm to any setting. [Combo of 2 Piece]';
+                price = '119';
+                deletePrice = '189';
+                discount = '37%';
+                break;
+                case '41':
+                mainImage = diya10;
+                heading = 'Purple Crystal T Light';
+                caption = 'Purple Crystal T-Lights: Cast a mesmerizing glow, infusing your space with a sense of magic and tranquility, adding an elegant touch to any occasion. [Combo of 2 Piece]';
+                price = '119';
+                deletePrice = '189';
+                discount = '37%';
+                break;
+                case '42':
+                mainImage = diya11;
+                heading = 'Olive Green Crystal T Light';
+                caption = 'Olive Green Crystal T-Lights: Illuminate your space with a serene glow, blending earthy tones with captivating elegance, bringing a touch of nature indoors. [Combo of 2 Piece]';
+                price = '119';
+                deletePrice = '189';
+                discount = '37%';
+                break;
+                case '43':
+                mainImage = diya12;
+                heading = 'Pink Crystal T Light';
+                caption = 'Pink Crystal T-Lights: Infuse your space with a soft, romantic glow, adding a touch of warmth and sophistication to any setting or occasion. [Combo of 2 Piece]';
+                price = '119';
+                deletePrice = '189';
+                discount = '37%';
+                break;
+                case '44':
+                mainImage = thali1;
+                heading = 'Resin Pooja Thali [1]';
+                caption = 'Embrace Tradition: Elevate your rituals with Resin Pooja Thalis, blending sacred significance with exquisite craftsmanship. [Size - 8 inch]';
+                price = '799';
+                deletePrice = '899';
+                discount = '11%';
+                break;
+                case '45':
+                mainImage = thali2;
+                heading = 'Resin Pooja Thali [2]';
+                caption = 'Embrace Tradition: Elevate your rituals with Resin Pooja Thalis, blending sacred significance with exquisite craftsmanship. [Size - 6 inch]';
+                price = '599';
+                deletePrice = '699';
+                discount = '15%';
+                break;
+                case '46':
+                    mainImage = thali3;
+                    heading = 'Resin Pooja Thali [3]';
+                    caption = 'Embrace Tradition: Elevate your rituals with Resin Pooja Thalis, blending sacred significance with exquisite craftsmanship. [Size - 6 inch]';
+                    price = '599';
+                    deletePrice = '699';
+                    discount = '15%';
+                break;
+                case '47':
+                    mainImage = thali4;
+                    heading = 'Resin Pooja Thali [4]';
+                    caption = 'Embrace Tradition: Elevate your rituals with Resin Pooja Thalis, blending sacred significance with exquisite craftsmanship. [Size - 6 inch]';
+                    price = '599';
+                    deletePrice = '699';
+                    discount = '15%';
+                break;
+                case '48':
+                    mainImage = thali5;
+                    heading = 'Resin Pooja Thali [5]';
+                    caption = 'Embrace Tradition: Elevate your rituals with Resin Pooja Thalis, blending sacred significance with exquisite craftsmanship. [Size - 6 inch]';
+                    price = '599';
+                    deletePrice = '699';
+                    discount = '15%';
+                break;
+                case '49':
+                    mainImage = thali6;
+                    heading = 'Resin Pooja Thali [6]';
+                    caption = 'Embrace Tradition: Elevate your rituals with Resin Pooja Thalis, blending sacred significance with exquisite craftsmanship. [Size - 6 inch]';
+                    price = '599';
+                    deletePrice = '699';
+                    discount = '15%';
+                break;
+                case '50':
+                    mainImage = flowerhanging;
+                    heading = 'Flower Hanging';
+                    caption = 'Adorn your space with Flower Hanging Decor, bringing the beauty of nature indoors with delicate elegance. These graceful blooms elevate any setting, adding a touch of freshness and charm to your surroundings. [Ring Size - 6 inch]';
+                    price = '599';
+                    deletePrice = '799';
+                    discount = '25%';
+                break;
+                case '51':
+                    mainImage = toran1;
+                    heading = 'Toran [1]';
+                    caption = 'Torans: Adorn your entryway with these vibrant symbols of festivity and tradition, inviting joy and prosperity into your home with their colorful allure. [Size - 18 inch]';
+                    price = '1999';
+                    deletePrice = '2499';
+                    discount = '20%';
+                break;
+                case '52':
+                    mainImage = toran2;
+                    heading = 'Toran [2]';
+                    caption = 'Torans: Adorn your entryway with these vibrant symbols of festivity and tradition, inviting joy and prosperity into your home with their colorful allure. [Size - 18 inch]';
+                    price = '2199';
+                    deletePrice = '2599';
+                    discount = '15%';
+                break;
+                case '53':
+                    mainImage = toran3;
+                    heading = 'Toran [3]';
+                    caption = 'Torans: Adorn your entryway with these vibrant symbols of festivity and tradition, inviting joy and prosperity into your home with their colorful allure. [Size - 18 inch]';
+                    price = '1599';
+                    deletePrice = '1999';
+                    discount = '20%';
+                break;
+                case '54':
+                    mainImage = toran4;
+                    heading = 'Toran [4]';
+                    caption = 'Torans: Adorn your entryway with these vibrant symbols of festivity and tradition, inviting joy and prosperity into your home with their colorful allure. [Size - 18 inch]';
+                    price = '1399';
+                    deletePrice = '1799';
+                    discount = '22%';
+                break;
+                case '55':
+                    mainImage = rangoli1;
+                    heading = 'Lotus Rangoli';
+                    caption = 'Resin Lotus Rangoli: Intricate patterns of petals, blooming with vibrant hues, adorn floors in a celebration of tradition and beauty, inviting auspiciousness and harmony into homes, each design a masterpiece of artistry and culture, mesmerizing all who behold its intricate allure. [12 inch Rangoli with 5(3 inch) Lotus]';
+                    price = '749';
+                    deletePrice = '1499';
+                    discount = '51%';
+                break;
+                case '56':
+                    mainImage = rangoli2;
+                    heading = 'Charan Rangoli';
+                    caption = 'Resin Charan Rangoli: Infuse your space with spiritual significance and artistic beauty, honoring tradition with intricate patterns that radiate cultural richness and elegance. [12 inch Rangoli with 5(3 inch) Charan]';
+                    price = '1399';
+                    deletePrice = '1799';
+                    discount = '22%';
+                break;
+                case '57':
+                    mainImage = shub1;
+                    heading = 'Shubh Labh [Light Blue]';
+                    caption = ' Welcome prosperity and auspiciousness into your home with this traditional symbol, invoking blessings and abundance for a harmonious life ahead. [Size - 3 inch] [Combo of 2]';
+                    price = '1099';
+                    deletePrice = '1599';
+                    discount = '31%';
+                break;
+                case '58':
+                    mainImage = shub2;
+                    heading = 'Shubh Labh [White]';
+                    caption = ' Welcome prosperity and auspiciousness into your home with this traditional symbol, invoking blessings and abundance for a harmonious life ahead. [Size - 3 inch] [Combo of 2]';
+                    price = '1099';
+                    deletePrice = '1599';
+                    discount = '31%';
+                break;
+                case '59':
+                    mainImage = shub3;
+                    heading = 'Shubh Labh [Brown]';
+                    caption = ' Welcome prosperity and auspiciousness into your home with this traditional symbol, invoking blessings and abundance for a harmonious life ahead. [Size - 3 inch] [Combo of 2]';
+                    price = '1099';
+                    deletePrice = '1599';
+                    discount = '31%';
                 break;
             default:
                 setCurrentImage(image1);

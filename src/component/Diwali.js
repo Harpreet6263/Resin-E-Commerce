@@ -58,49 +58,49 @@ useEffect(() =>{
                 </div>
                 
                 <div className="coster">
-                <Link style={{ color: 'black', textDecoration: 'none' }} to='/category/2'>
+                <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/50'>
                    <img id='costerImg' src={hanging} alt="" />
                    <p id='costerId'>Hanging</p>
                    <p id='costerIdOver'>Hanging</p>
                    </Link>
                 </div>
                 <div className="nameplate">
-                <Link style={{ color: 'black', textDecoration: 'none' }} to='/category/3'>
+                <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/51'>
                    <img id='nameplateImg' src={toran1} alt="" />
                    <p id='nameplateId'>Toran</p>
                    <p id='nameplateIdOver'>Toran</p>
                    </Link>
                 </div>
                 <div className="lamp">
-                <Link style={{ color: 'black', textDecoration: 'none' }} to='/category/4'>
+                <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/52'>
                    <img id='lampImg' src={toran2} alt="" />
                    <p id='lampId'>Toran</p>
                    <p id='lampIdOver'>Toran</p>
                    </Link>
                 </div>
                 <div className="keyring">
-                <Link style={{ color: 'black', textDecoration: 'none' }} to='/category/5'>
+                <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/53'>
                    <img id='keyringImg' src={toran3} alt="" />
                    <p id='keyringId'>Toran</p>
                    <p id='keyringIdOver'>Toran</p>
                    </Link>
                 </div>
                 <div className="jewellery">
-                <Link style={{ color: 'black', textDecoration: 'none' }} to='/category/6'>
+                <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/54'>
                    <img id='jewelleryImg' src={toran4} alt="" />
                    <p id='jewelleryId'>Toran</p> 
                    <p id='jewelleryIdOver'>Toran</p>
                    </Link>
                 </div>
                 <div className="table">
-                <Link style={{ color: 'black', textDecoration: 'none' }} to='/category/7'>
+                <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/55'>
                    <img id='tableImg' src={rangoli1} alt="" />
                    <p id='tableId'>Lotus Rangoli</p>
                    <p id='tableIdOver'>Rangoli</p>
                    </Link>
                 </div>
                 <div className="table">
-                <Link style={{ color: 'black', textDecoration: 'none' }} to='/category/8'>
+                <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/56'>
                    <img id='tableImg' src={rangoli2} alt="" />
                    <p id='tableId'>Rangoli</p>
                    <p id='tableIdOver'>Rangoli</p>
@@ -114,24 +114,24 @@ useEffect(() =>{
                    </Link>
                 </div>
                 <div className="table">
-                <Link style={{ color: 'black', textDecoration: 'none' }} to='/category/10'>
+                <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/57'>
                    <img id='tableImg' src={shub1} alt="" />
-                   <p id='tableId'>Shub Labh</p>
-                   <p id='tableIdOver'>Shub Labh</p>
+                   <p id='tableId'>Shubh Labh</p>
+                   <p id='tableIdOver'>Shubh Labh</p>
                    </Link>
                 </div>
                 <div className="table">
-                <Link style={{ color: 'black', textDecoration: 'none' }} to='/category/11'>
+                <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/58'>
                    <img id='tableImg' src={shub2} alt="" />
-                   <p id='tableId'>Shub Labh</p>
-                   <p id='tableIdOver'>Shub Labh</p>
+                   <p id='tableId'>Shubh Labh</p>
+                   <p id='tableIdOver'>Shubh Labh</p>
                    </Link>
                 </div>
                 <div className="table">
-                <Link style={{ color: 'black', textDecoration: 'none' }} to='/category/12'>
+                <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/59'>
                    <img id='tableImg' src={shub3} alt="" />
-                   <p id='tableId'>Shub Labh</p>
-                   <p id='tableIdOver'>Shub Labh</p>
+                   <p id='tableId'>Shubh Labh</p>
+                   <p id='tableIdOver'>Shubh Labh</p>
                    </Link>
                 </div>
             </div>

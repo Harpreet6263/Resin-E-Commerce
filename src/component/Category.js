@@ -599,94 +599,103 @@ export default function Category() {
         </div>
         break;
         case '10':
+            content = <div className='parentCategory'>
+            <h4>Varmalas are coming soon..</h4>
+        </div>
             break;
         case '11':
+            content = <div className='parentCategory'>
+            <h4>Platters coming soon..</h4>
+        </div>
             break;
         case '12':
+            content = <div className='parentCategory'>
+            <h4>Clocks coming soon..</h4>
+        </div>
             break;
         case '13':
             content = <div className='parentCategory'>
-                <h1>T Lights</h1>
+                <h1>T Light Holders</h1>
                 <div className='frameCategory'>
                     <div className="childFrame">
-                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productcoaster/1'> 
+                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/32'> 
                         <img id='childFrameImg' src={diya1} alt="" />
                         <p id='childFrameId'>Leaf T Light</p>
                         <p id='price'>Rs.69 <span id='priceCut'>M.R.P: </span><del>Rs.99</del></p>
                         </Link>
                     </div>
                     <div className="childFrame">
-                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productcoaster/2'>
+                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/33'>
                         <img id='childFrameImg' src={diya2} alt="" />
                          <p id='childFrameId'>Mandala</p>
                         <p id='price'>Rs.79 <span id='priceCut'>M.R.P: </span><del>Rs.119</del></p>
                         </Link>
                     </div>
                     <div className="childFrame">
-                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productcoaster/3'>
+                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/34'>
                         <img id='childFrameImg' src={diya3} alt="" />
                          <p id='childFrameId'>Wooden Lotus T Light</p>
                         <p id='price'>Rs.49 <span id='priceCut'>M.R.P: </span><del>Rs.99</del></p>
                         </Link>
                     </div>
                     <div className="childFrame">
-                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productcoaster/4'> 
+                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/35'> 
                         <img id='childFrameImg' src={diya4} alt="" />
                         <p id='childFrameId'>Lotus T Light</p>
                         <p id='price'>Rs.199 <span id='priceCut'>M.R.P: </span><del>Rs.249</del></p>
                         </Link>
                     </div>
                     <div className="childFrame">
-                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productcoaster/5'>
+                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/36'>
                         <img id='childFrameImg' src={diya5} alt="" />
                          <p id='childFrameId'>Butterfly T Light</p>
                         <p id='price'>Rs.79 <span id='priceCut'>M.R.P: </span><del>Rs.99</del></p>
                         </Link>
                     </div>
                     <div className="childFrame">
-                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productcoaster/6'>
+                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/37'>
                         <img id='childFrameImg' src={diya6} alt="" />
                          <p id='childFrameId'>Flower T Light</p>
                         <p id='price'>Rs.59 <span id='priceCut'>M.R.P: </span><del>Rs.99</del></p>
                         </Link>
                     </div>
                     <div className="childFrame">
-                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productcoaster/1'> 
+                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/38'> 
                         <img id='childFrameImg' src={diya7} alt="" />
                         <p id='childFrameId'>Square T Light</p>
                         <p id='price'>Rs.79 <span id='priceCut'>M.R.P: </span><del>Rs.99</del></p>
                         </Link>
                     </div>
                     <div className="childFrame">
-                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productcoaster/2'>
+                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/39'>
                         <img id='childFrameImg' src={diya8} alt="" />
                          <p id='childFrameId'>Star T Light</p>
                         <p id='price'>Rs.89 <span id='priceCut'>M.R.P: </span><del>Rs.119</del></p>
                         </Link>
                     </div>
                     <div className="childFrame">
-                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productcoaster/3'>
+                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/40'>
                         <img id='childFrameImg' src={diya9} alt="" />
                          <p id='childFrameId'>Red Crystal T Light</p>
                         <p id='price'>Rs.119 <span id='priceCut'>M.R.P: </span><del>Rs.189</del></p>
                         </Link>
                     </div>
                     <div className="childFrame">
-                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productcoaster/4'> 
+                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/41'> 
                         <img id='childFrameImg' src={diya10} alt="" />
                         <p id='childFrameId'>Purple Crystal T Light</p>
                         <p id='price'>Rs.119 <span id='priceCut'>M.R.P: </span><del>Rs.189</del></p>
                         </Link>
                     </div>
                     <div className="childFrame">
-                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productcoaster/5'>
+                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/42'>
                         <img id='childFrameImg' src={diya11} alt="" />
                          <p id='childFrameId'>Green Crystal T Light</p>
                         <p id='price'>Rs.119 <span id='priceCut'>M.R.P: </span><del>Rs.189</del></p>
                         </Link>
                     </div>
                     <div className="childFrame">
-                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productcoaster/6'>
+                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/43'>
                         <img id='childFrameImg' src={diya12} alt="" />
                          <p id='childFrameId'>Pink Crystal T Light</p>
                         <p id='price'>Rs.119 <span id='priceCut'>M.R.P: </span><del>Rs.189</del></p>
@@ -700,42 +709,42 @@ export default function Category() {
                 <h1>Thalis</h1>
                 <div className='frameCategory'>
                     <div className="childFrame">
-                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productcarhanging/1'> 
+                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/44'> 
                         <img id='childFrameImg' src={thali1} alt="" />
                         <p id='childFrameId'>Pooja Thali</p>
                         <p id='price'>Rs.799 <span id='priceCut'>M.R.P: </span><del>Rs.899</del></p>
                         </Link>
                     </div>
                     <div className="childFrame">
-                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productcarhanging/2'> 
+                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/45'> 
                         <img id='childFrameImg' src={thali2} alt="" />
                         <p id='childFrameId'>Pooja Thali</p>
                         <p id='price'>Rs.599 <span id='priceCut'>M.R.P: </span><del>Rs.699</del></p>
                         </Link>
                     </div>
                     <div className="childFrame">
-                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productcarhanging/3'>
+                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/46'>
                         <img id='childFrameImg' src={thali3} alt="" />
                          <p id='childFrameId'>Pooja Thali</p>
                         <p id='price'>Rs.599 <span id='priceCut'>M.R.P: </span><del>Rs.699</del></p>
                         </Link>
                     </div>
                     <div className="childFrame">
-                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productcarhanging/4'>
+                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/47'>
                         <img id='childFrameImg' src={thali4} alt="" />
                          <p id='childFrameId'>Pooja Thali</p>
                         <p id='price'>Rs.599 <span id='priceCut'>M.R.P: </span><del>Rs.599</del></p>
                         </Link>
                     </div>
                     <div className="childFrame">
-                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productcarhanging/5'>
+                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/48'>
                         <img id='childFrameImg' src={thali5} alt="" />
                          <p id='childFrameId'>Pooja Thali</p>
                         <p id='price'>Rs.599 <span id='priceCut'>M.R.P: </span><del>Rs.699</del></p>
                         </Link>
                     </div>
                     <div className="childFrame">
-                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productcarhanging/6'> 
+                    <Link style={{ color: 'black', textDecoration: 'none' }} to='/productkeyring/49'> 
                         <img id='childFrameImg' src={thali6} alt="" />
                         <p id='childFrameId'>Pooja Thali</p>
                         <p id='price'>Rs.599 <span id='priceCut'>M.R.P: </span><del>Rs.699</del></p>

@@ -1,37 +1,39 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useHistory } from 'react-router-dom'; // Import useHistory from 'react-router-dom'
+import { useHistory } from 'react-router-dom'; 
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 function Signup() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
+  const [address, setAddress] = useState('');
   const [mobilenumber, setMobileNumber] = useState('');
   const [error, setError] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
-  const history = useHistory(); // Access the history object
+  const history = useHistory(); 
 
   const handleSignup = async () => {
-    if (!username || !password || !email || !mobilenumber) {
+    if (!username || !password || !email || !address || !mobilenumber) {
       setError('Please fill in all required fields');
       return;
     }
     try {
-      // Make a POST request to your backend endpoint for signup
+      
       const response = await axios.post('http://localhost:5001/signup', {
         username,
         password,
         email,
+        address,
         mobilenumber
       });
-      // Handle successful signup
+      
       setSuccessMessage(response.data.message);
       setError('');
-      // Redirect to the sign-in page
+      
       push();
     } catch (error) {
-      // Handle errors during signup
+      
       if (error.response) {
         setError(error.response.data.error);
       } else {
@@ -65,13 +67,17 @@ function Signup() {
         <input type="email" placeholder='Enter email' value={email} onChange={(e) => setEmail(e.target.value)} />
       </div>
       <div className='accountChild'>
+        <label>Address:<span style={{color:'red', fontSize:'12px'}}> Note: Cannot be changed later</span></label><br />
+        <input type="address" placeholder='Enter Full Address' value={address} onChange={(e) => setAddress(e.target.value)} />
+      </div>
+      <div className='accountChild'>
         <label>Set Password:</label><br />
         <input type="password" placeholder='At least 6 characters' value={password} onChange={(e) => setPassword(e.target.value)} />
       </div>
       <button onClick={handleSignup}>Sign Up</button>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       {successMessage && <p style={{ color: 'green' }}>{successMessage}</p>}
-      <p id='member'>Already a member? <Link  to="/">Sign In</Link> </p>
+      <p id='member'>Already a member? <Link style={{ color: 'red' }} to="/" >Sign In</Link> </p>
     </div>
     </div>
   );

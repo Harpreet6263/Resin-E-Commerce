@@ -556,7 +556,7 @@ function Products() {
                 setCurrentImage3(dt3);
                 setCurrentImage4(dt4);
                 heading = 'Dog Tag';
-                caption = 'Resin-Cast Dog Tags: Infusing durability and style, these meticulously crafted tags ensure your pets identity remains intact while adding a touch of uniqueness to their ensemble.';
+                caption = 'Resin-Cast Dog Tags: Infusing durability and style, these meticulously crafted tags ensure your pets identity remains intact while adding a touch of uniqueness to their ensemble. [Quantity - 1 piece]';
                 price = '300';
                 deletePrice = '350';
                 discount = '15%';

@@ -154,6 +154,8 @@ color: rgb(255, 64, 0);
     margin-bottom: 0;
 }
 .signParent{
+    background-image: url(/src//component/gallery/login_background.jpg);
+    background-size: 100% 100%;
     width: 100%;
     height: 100vh;
     background-color: #eee;
@@ -164,12 +166,14 @@ color: rgb(255, 64, 0);
 .signin{
     width:300px ;
     border-style: solid;
+    border-color: #b0adadd3;
     border-width: 1px;
     border-radius: 7px;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: #ddd3d2d3;
 }
 .signin #account{
     width: 100%;
@@ -181,10 +185,16 @@ width: 100%;
 }
 .signin input{
     width: 100%;
-    border-radius: 5px;
+    border-radius: 0px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
     border-width: 1px;
-    background-color: #eee;
-    border-color: rgb(144, 143, 143);
+    background-color: #ddd3d200;
+    border-color: rgb(0, 0, 0);
+}
+.signin input:focus{
+    outline: none;
 }
 .signin label{
     font-weight: 500;
@@ -195,6 +205,7 @@ margin-top: 20px;
 width: 100%;
 border-radius: 7px;
 color: aliceblue;
+border-color: rgba(255, 64, 64, 0.955);
 background-color: rgba(255, 64, 64, 0.955);
 }
 .signin #member{
@@ -272,6 +283,90 @@ background-color: rgba(255, 64, 64, 0.955);
     text-align: center;
     font-size: 20px;
 }
+.contactContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.contactChild{
+    width: 60%;
+    text-align: center;
+}
+.contactChild .aboutus{
+    margin-top: 20px;
+}
+.contactChild .aboutus #journey{
+    margin-bottom: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.3;
+    color: #616060;
+}
+.contactChild img{
+    width: 100%;
+}
+.contactname, .emailcontact, .query{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.contactnameinner{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+.fname, .lname, .emailcontact, .query{
+    text-align: left;
+    
+}
+.fname,.lname{
+    width: 250px;
+}
+.fname{
+    margin-right: 20px;
+}
+.emailcontact .emailinner{
+width: 60%;
+}
+.emailcontact #emailtext{
+    width: 100%;
+}
+#fname, #lname{
+    width: 100%;
+}
+.query{
+    width: 100%;
+}
+.query .queryinner{
+    width: 60%;
+}
+.query #querytext{
+    width: 100%;
+    height: 100px;
+}
+#contactsubmit{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    width: 60%;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.625);
+    border-color: rgba(255, 0, 0, 0.625);
+}
+#contactsubmit:active{
+    background-color: rgb(255, 0, 0);
+}
+#chat{
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0.792);
+}
+#instapic{
+    width: 25px;
+    margin-right: 20px;
+}
+#linkdin{
+    width: 25px;
+    margin-left: 20px;
+}
 
 
 @media (max-width:1100px){
@@ -292,6 +387,10 @@ background-color: rgba(255, 64, 64, 0.955);
         .productDetail .productDetailChild .size .sizeS .productPriceInside{
             font-size: 10px;
             }
+            .contactChild{
+                width: 70%;
+            }
+            
 }
 @media (max-width:960px){
     .productParent .productGallery{
@@ -308,6 +407,12 @@ background-color: rgba(255, 64, 64, 0.955);
     .productParent .productDetail{
         width: 80%;
     }
+    .contactChild{
+        width: 80%;
+    }
+    /* #fname, #lname{
+        width: 50%;
+    } */
 }
 @media (max-width:830px){
     .productParent .productGallery{
@@ -369,6 +474,10 @@ background-color: rgba(255, 64, 64, 0.955);
      }
 }
 @media (max-width:550px){
+    .signParent{
+        background-image: url(/src//component/gallery/login_background_mobile.jpg);
+
+    }
     .parentCart{
         padding-top: 10px;
         padding-left: 10px;
@@ -384,6 +493,22 @@ background-color: rgba(255, 64, 64, 0.955);
        
         font-size: 20px;
         margin-right: 20px;
+    }
+    .contactChild{
+        width: 90%;
+    }
+    .contactnameinner{
+        width: 80%;
+    }
+    .emailcontact .emailinner{
+        width: 80%;
+    }
+    .query .queryinner{
+        width: 80%;
+    }
+    #contactsubmit{
+       
+        width: 80%;
     }
 
 }

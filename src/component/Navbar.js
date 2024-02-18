@@ -49,11 +49,11 @@ useEffect(() => {
                   <li><a className="dropdown-item" href="/product/19">Dog Tags</a></li>
                   <li><a className="dropdown-item" href="/diwali">Diwali Items</a></li>
                   <li><hr className="dropdown-divider" /></li>
-                  <li><a className="dropdown-item" href="/">Something else here</a></li>
+                  <li><a className="dropdown-item" href="/main">More</a></li>
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">Contact</a>
+                <a className="nav-link" href="/contact">Contact</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/order">Orders</a>
