@@ -194,37 +194,7 @@ const redirect=()=>{
         document.getElementById('sizeMedium').style.color = 'rgb(255, 64, 0)';
     }
 
-    // const sendDataToBackend = async () => {
-    //     try {
-    //         // Data to be sent to the backend
-    //         const dataToSend = {
-    //             key1: 'hi',
-    //             key2: 'hiii',
-    //             // Add other key-value pairs as needed
-    //         };
-    
-    //         // Send a POST request to the backend API endpoint
-    //         const response = await fetch('/api/data', {
-    //             method: 'POST',
-    //             headers: {
-    //                 'Content-Type': 'application/json'
-    //             },
-    //             body: JSON.stringify(dataToSend)
-    //         });
-    
-    //         // Check if the request was successful
-    //         if (response.ok) {
-    //             console.log('Data sent successfully');
-    //             // Handle successful response (if needed)
-    //         } else {
-    //             console.error('Failed to send data');
-    //             // Handle error response (if needed)
-    //         }
-    //     } catch (error) {
-    //         console.error('Error sending data:', error);
-    //         // Handle error (if needed)
-    //     }
-    // };
+
     
     return (
         <div>

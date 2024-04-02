@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Category.css';
 import f1 from './gallery/frames/f1.jpg';
 import f2 from './gallery/frames/f2.jpg';
@@ -81,10 +81,36 @@ import thali3 from './gallery/diwali/thali/thali3.jpg';
 import thali4 from './gallery/diwali/thali/thali4.jpg';
 import thali5 from './gallery/diwali/thali/thali5.jpg';
 import thali6 from './gallery/diwali/thali/thali6.jpg';
+import heart from './gallery/heart.png';
+import heartfilled from './gallery/heart filled.png';
 
 
 import { Link, useParams } from 'react-router-dom/cjs/react-router-dom.min';
+import Axios from 'axios';
+
 export default function Category() {
+    const [currHeart, setCurrHeart] = useState(heart);
+    const [heartFilled, setHeartFilled] = useState(Array(50).fill(false));
+    const heartfunction = async (data) =>{
+        const {imgName,heading,price,pricecut} = data;
+    if(currHeart === heart){
+        setHeartFilled(!heartFilled);
+        try {
+        await Axios.post('http://localhost:5001/wishlist', {
+            imgName: imgName,
+            heading: heading,
+            price: price,
+            pricecut: pricecut
+        });
+    } catch (error){
+        console.log('error', error);
+    }
+        
+    }else{
+        setCurrHeart(heart);
+        console.clear();
+    }
+    };
     useEffect(()=>{
         window.scrollTo(0,0);
     },[]);
@@ -96,6 +122,7 @@ export default function Category() {
                 <h1>Frames</h1>
                 <div className='frameCategory'>
                     <div className="childFrame">
+                    <img id='heart' src={heartFilled ? heartfilled : currHeart} onClick={() => heartfunction({ imgName: 'f1', heading: 'Photo Frame', price: 499, pricecut: 599 })} alt=""/>
                     <Link style={{ color: 'black', textDecoration: 'none' }} to='/product/1'>
                         <img id='childFrameImg' src={f1} alt="" />
                         <p id='childFrameId'>Photo Frame</p>
@@ -103,6 +130,7 @@ export default function Category() {
                         </Link>
                     </div>
                     <div className="childFrame">
+                    <img id='heart' src={heartFilled ? heartfilled : currHeart} onClick={() => heartfunction({ imgName: 'f2', heading: 'Maha Mrityunjaya Frame', price: 499, pricecut: 549 })} alt=""/>
                     <Link style={{ color: 'black', textDecoration: 'none' }} to='/product/2'>
                         <img id='childFrameImg' src={f2} alt="" />
                          <p id='childFrameId'>Maha Mrityunjaya Frame</p>

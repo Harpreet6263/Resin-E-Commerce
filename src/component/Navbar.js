@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 import cart from './gallery/cart.png';
-import signout from './gallery/logout.png';
+//import signout from './gallery/logout.png';
+import usericon from './gallery/usericon.png';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 export default function Navbar() {
+  const [isHovered, setIsHovered] = useState(false);
   const [cartData, setCartData] = useState([]);
   const fetchCartData = async () => {
     try {
@@ -18,6 +20,16 @@ useEffect(() => {
   // Fetch cart data when the component mounts
   fetchCartData();
 }, []);
+const detailVisibilityOn = () =>{
+  if(isHovered === false){
+     setIsHovered(true);
+  }else{
+    setIsHovered(false);
+  }
+}
+const detailVisibilityOff=()=>{
+  setIsHovered(false);
+}
 
 
   return (
@@ -32,6 +44,10 @@ useEffect(() => {
     <p id='cartlengthresponsive'>{cartData.length}</p>
   </div>
 )}
+           <span className="profileparentresponsive" onClick={detailVisibilityOn}>
+               <img id='profileresponsive' src={usericon} alt="" />
+           </span>
+
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button></div>
@@ -53,7 +69,7 @@ useEffect(() => {
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/contact">Contact</a>
+                <a className="nav-link" href="/start">Customization</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/order">Orders</a>
@@ -66,12 +82,24 @@ useEffect(() => {
               <p id='cartlengthnumber'>{cartData.length}</p>
             </div>
            )}
-           <div className="signoutparent">
-           <Link to="/"><img id='signout' src={signout} alt="#" /></Link>
+           <div className="profileparent" onClick={detailVisibilityOn} onMouseEnter={detailVisibilityOn} >
+               <img id='profile' src={usericon} alt="" />
            </div>
+           {/* <div className="signoutparent">
+           <Link to="/"><img id='signout' src={signout} alt="#" /></Link>
+           </div> */}
           </div>
         </div>
       </nav>
+      {isHovered && <div className="profileDetail">
+        <div className='profileDetailInner' onMouseLeave={detailVisibilityOff}>
+        <Link style={{ color: 'black', textDecoration: 'none' }} to= "/account"><li id='profileItem' onClick={detailVisibilityOff}>Account</li></Link>
+        <Link style={{ color: 'black', textDecoration: 'none' }} to= "/order"> <li id='profileItem' onClick={detailVisibilityOff}>Orders</li></Link>
+        <Link style={{ color: 'black', textDecoration: 'none' }} to= "/wishlist"><li id='profileItem' onClick={detailVisibilityOff}>Wish List</li></Link>
+        <Link style={{ color: 'black', textDecoration: 'none' }} to= "/contact"><li id='profileItem' onClick={detailVisibilityOff}>Contact</li></Link>
+        <Link style={{ color: 'black', textDecoration: 'none' }} to="/"><li id='profileItem' onClick={detailVisibilityOff}>Sign out</li></Link>
+        </div>
+      </div>}
     </div>
   )
 }

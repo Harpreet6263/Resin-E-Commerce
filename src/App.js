@@ -22,6 +22,8 @@ import Orders from './component/Orders';
 import Confirmedorder from './component/Confirmedorder';
 import Diwali from './component/Diwali';
 import Contact from './component/Contact';
+import Wishlist from './component/Wishlist';
+import Account from './component/Account';
 
 
 
@@ -38,6 +40,14 @@ function App() {
           <Route path="/main">
             <Navbar />
             <Main />
+          </Route>
+          <Route path="/wishlist">
+            <Navbar />
+            <Wishlist/>
+          </Route>
+          <Route path="/account">
+            <Navbar />
+            <Account/>
           </Route>
           <Route path="/diwali">
             <Navbar />

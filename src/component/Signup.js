@@ -43,7 +43,6 @@ function Signup() {
     }
   };
   function push() {
-    alert("Sign Up successfull. Login to enter..");
     history.push('/signin');
   }
 

@@ -47,8 +47,8 @@ const Cart = () => {
             const response = await axios.post('http://localhost:5001/settoorder');
            
             setConfirmData(response.data); 
-            
             redirect();
+            
  
         } catch (error) {
             console.error('Error sending order data:', error);
